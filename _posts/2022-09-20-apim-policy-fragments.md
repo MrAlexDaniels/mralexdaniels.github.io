@@ -1,5 +1,5 @@
 ---
-title: Advanced Policies With APIM
+title: Policy Fragments With APIM
 author: Alex Daniels
 date: 2022-09-20 12:10:00 +0800
 categories: [API Management (APIM)]
