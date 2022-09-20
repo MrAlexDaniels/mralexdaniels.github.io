@@ -1,5 +1,5 @@
 ---
-title: Policy Fragments With APIM
+title: Policy Fragments In APIM
 author: Alex Daniels
 date: 2022-09-20 12:10:00 +0800
 categories: [Azure API Management, APIM]
@@ -30,7 +30,7 @@ After the creation of it we can use the fragment anywhere we need it. Allowing f
 <include-fragment fragment-id="request-jwt-roles" />
 ```
 
-![alt text](/img/policy_frag3.png)
+![alt text](/img/policy_frag3.png) 
 
 
 ## Limitations
