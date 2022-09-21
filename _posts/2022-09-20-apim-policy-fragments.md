@@ -8,9 +8,9 @@ render_with_liquid: false
 ---
 
 
-In this article we are going to talk about policy fragments and use cases. Let's start by understanding what a policy fragment is. 
+In this article we are going to talk about policy fragments and use cases. Let's start by understanding what a policy fragment is. Policy fragments help you configure policies consistently and maintain policy definitions without the need to repeat or retype XML code. 
 
-Policy fragments help you configure policies consistently and maintain policy definitions without the need to repeat or retype XML code. 
+
 
 
 ## Scenario 
@@ -22,7 +22,7 @@ In this policy we are looking at a JWT token and checking the roles that were in
 ## Creating a Policy Fragment
 We are going to name the fragment and drop the policy from the image above into it.
 
-![alt text](/img/policy_frag2.png)
+![alt text](/img/policy_frag4.png)
 
 After the creation of it we can use the fragment anywhere we need it. Allowing for us to edit in one location instead of multiple. 
 
@@ -36,3 +36,6 @@ After the creation of it we can use the fragment anywhere we need it. Allowing f
 ## Limitations
 * A policy fragment can't include a policy section identifier (`<inbound>`, `<outbound>`, etc.) or the `<base/>` element.
 * Currently, a policy fragment can't nest another policy fragment.
+
+## Reference
+* 
