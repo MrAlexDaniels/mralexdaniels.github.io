@@ -40,9 +40,10 @@ I found the easiest way to grab the issued token is to get it from the Developer
 
 ![alt text](/img/DevPortal1.png)
 
-Copy to token and lets go to https://jwt.ms/ to take a look at it! 
+Copy to token and lets go to [https://jwt.ms](https://jwt.ms/) to take a look at it! 
 
-<sup>Note: Remove "Bearer" from the token when pasting into jwt.ms</sub>
+
+<sup>Note: Remove "Bearer" from the token when pasting into [https://jwt.ms](https://jwt.ms/)</sup>
 
 ![alt text](/img/Jwt1.png)
 
@@ -54,14 +55,27 @@ If everything is configured correctly you should not see the roles assigned to t
 
 We have a couple important things going on here. First, we are validating the Bearer Token. Second we are outputting the token as a variable called `jwt`.
 
-`<validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid." output-token-variable-name="jwt">`
+```xml
+<validate-jwt header-name="Authorization" failed-validation-httpcode="401" failed-validation-error-message="Unauthorized. Access token is missing or invalid." output-token-variable-name="jwt">
+```
 
 Now that we have the token stored as a context variable we can access it. Using `context.Variables` 
 
 
-So what are we doing? What does the highlighted line of code do? 
+So what are we doing? What does this line of code do? 
+```xml
+<when condition="@(context.Request.Method == "POST" && !((Jwt)context.Variables["jwt"]).Claims["roles"].Contains("api.post"))">
+    <return-response>
+        <set-status code="403" reason="Forbidden" />
+    </return-response>
+</when>
+```
 
-We are looking at the `Request.Method`, if its a `POST` we need to check the token roles to determine if the user can perform that action. `((Jwt)context.Variables["jwt"]).Claims["roles"].Contains("api.post"))`.
+
+We are looking at the `Request.Method`, if its a `POST` we need to check the token roles to determine if the user can perform that action. 
+```xml
+((Jwt)context.Variables["jwt"]).Claims["roles"].Contains("api.post"))
+```
 
 If the user does not have the correct role they will get a 403 Forbidden returns to them. 
 
