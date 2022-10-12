@@ -22,7 +22,7 @@ Within the app registration created for our APIM enviroment we need to configure
 
 This is where we can create our custom roles that are assigned to each user. In this example we are creating roles that grant access to `GET`, `POST`, `PATCH`, `PUT`, `DELETE`, `ADMIN` 
 
-![alt text](/img/appreg1.png)
+![alt text](/img/AppReg1.png)
 
 ### Enterprise Application
 Now lets go into the Enterprise Application for our app. From here we can assign a role to a user/group. 
@@ -31,7 +31,7 @@ Now lets go into the Enterprise Application for our app. From here we can assign
 - Select role
 - Assign
 
-![alt text](/img/enterpriseappreg1.png)
+![alt text](/img/EnterpriseAppReg1.png)
 
 We now have everything configured for the token to pass these roles!
 
