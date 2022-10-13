@@ -44,7 +44,7 @@ I found the easiest way to grab the issued token is to get it from the Developer
 
 ![alt text](/img/Jwt1.png)
 
-If everything is configured correctly you should not see the roles assigned to that user.
+If everything is configured correctly you should see the roles assigned to that user.
 
 ## Limiting Access with a Policy
 
