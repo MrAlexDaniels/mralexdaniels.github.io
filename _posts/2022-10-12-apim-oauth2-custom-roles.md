@@ -36,12 +36,9 @@ Now lets go into the Enterprise Application for our app. From here we can assign
 We now have everything configured for the token to pass these roles!
 
 ## Getting/Viewing the token 
-I found the easiest way to grab the issued token is to get it from the Developer Portal. From here we can use the Authorization to generate a Bearer Token that we can take a peak at. Copy to token and lets go to https://jwt.ms/ to take a look at it! 
+I found the easiest way to grab the issued token is to get it from the Developer Portal. From here we can use the Authorization to generate a Bearer Token that we can take a peek at. Copy the token and lets go to [https://jwt.ms](https://jwt.ms/) to take a look at it! 
 
 ![alt text](/img/DevPortal1.png)
-
-Copy to token and lets go to [https://jwt.ms](https://jwt.ms/) to take a look at it! 
-
 
 <sup>Note: Remove "Bearer" from the token when pasting into [https://jwt.ms](https://jwt.ms/)</sup>
 
