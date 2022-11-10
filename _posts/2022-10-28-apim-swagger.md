@@ -2,7 +2,7 @@
 title: Creating APIM API using Azure Function Swagger/OpenApi
 author: Alex Daniels
 date: 2022-10-28 12:10:00 +0800
-categories: [Azure API Management, APIM, AAD, AZURE FUNCTIONS]
+categories: [Azure API Management, Azure Functions]
 tags: [apim, azure api management, azure functions]
 render_with_liquid: false
 ---

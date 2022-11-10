@@ -2,7 +2,7 @@
 title: Policy Fragments In APIM
 author: Alex Daniels
 date: 2022-09-20 12:10:00 +0800
-categories: [Azure API Management, APIM]
+categories: [Azure API Management, Policies]
 tags: [apim, azure api management]
 render_with_liquid: false
 ---

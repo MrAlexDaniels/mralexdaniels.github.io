@@ -1,8 +1,8 @@
 ---
-title: Using AAD For Custom Roles In APIM
+title: Using Azure Active Directory For Custom Roles In APIM
 author: Alex Daniels
 date: 2022-10-12 12:10:00 +0800
-categories: [Azure API Management, APIM, AAD]
+categories: [Azure API Management, Advanced Policies, JWT Azure Active Directory]
 tags: [apim, azure api management, active directory]
 render_with_liquid: false
 ---
