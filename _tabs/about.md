@@ -19,6 +19,7 @@ order: 4
 - Joined Microsoft in February/2022
 - Professional motto: “It always seems impossible until it’s done. You can do it.”
 
+
 # Personally 
 - Married for 6 years with 4 beautiful furry creatures
 - Mentor for young software developers
